@@ -1,0 +1,27 @@
+ol{
+    background: darkkhaki; /*color de fondo del ol, lo podes sacar*/
+    padding-top: 1px; /*modificar a gusto*/
+    padding-right: 5px; /*modificar a gusto*/
+    padding-bottom: 3px;/*modificar a gusto*/
+
+}
+
+ol li p{
+    background: khaki; /*color de fondo del li p, lo podes sacar */
+}
+
+
+@media screen and (max-width: 600px){
+    ol{
+        width: 100%;
+    }
+    .li{
+        width: 100%;
+    }
+    .p{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+}

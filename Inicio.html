@@ -24,8 +24,17 @@
         <!-- css de la imagen -->
         <link rel="stylesheet" type="text/css" href="/CSS/home/imagen_responsiva.css">
 
+        <!-- css del iframe de youtube -->
+        <link rel="stylesheet" type="text/css" href="/CSS/home/iframe_responsive.css">
+
+        <!-- css del iframe de google maps -->
+        <link rel="stylesheet" type="text/css" href="/CSS/home/mapa_responsive.css">
+
         <!-- Css de las columnas -->
         <link rel="stylesheet" type="text/css" href="/CSS/home/columnas.css">
+
+        <!-- Css de las listas -->
+        <link rel="stylesheet" type="text/css" href="/CSS/home/listas_servicios.css">
 
         <!-- Css de las social media -->
         <link rel="stylesheet" type="text/css" href="/CSS/home/social_media.css">
@@ -45,8 +54,8 @@
         <div class="topnav" id="topnavhome">
             <a href="#" class="active" style="float: left;">Home</a> <!-- está en active porque pasa a ser el primer elemento en iniciar-->
             <a href="./SRC/Pestañas/Nuestros-Servicios.html">Servicios</a>
-            <a href="./SRC/Pestañas/Nuestros-Clientes.html">Clientes</a>
             <a href="./SRC/Pestañas/Contacto.html">Contacto</a>
+            <a href="./SRC/Pestañas/Nuestros-Clientes.html">Clientes</a>
 
             <!-- Esta función en javascript añade el menú hamburguesa para caundo cambia el tamaño de la pantalla -->
             <a href="javascript:void(0);" class="icon" onclick="funcionMenuHamburguesa()">
@@ -54,14 +63,17 @@
             </a>
         </div>
 
-        <!-- Imagen que pones de fp -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+                                        <!-- Imagen principal -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
         <!-- Le vamos a establecer un ancho y alto por defecto -->
         <img src="./SRC/Image/imagen2.jpg" class="imagenResponsive" width="600" height="400" alt="pintando">
 
         <div class="row">
-            <!-- Columna izquierda -->
             <!-- Info -->
-            <div class="columna">
+            <div class="columna1">
                 <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <h3 class="quienes-somos" style="text-align: center;">¿Quiénes somos?</h3>
                 </div>
@@ -77,62 +89,214 @@
                     ofrecer excelentes estándares de calidad y satisfacer todas sus necesidades.
                 </p>
             </div>
-            <!-- Columna derecha -->
-            <!-- Servicios-->
-            <div class="columna">
+        </div>
+
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+                                <!-- Servicios diseño de dos columnas -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <div class="row">
+            <div class="columna1">
                 <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <h3 style="text-align: center;">Nuestros servicios</h3>
                 </div>
-                <ul >
-                    <li>Logistica</li>
-                    <li>Calidad en Proceso</li>
-                    <li>Consultoria</li>
-                    <li>Atencio al Cliente</li>
-                    <li>Investigacion y Desarrollo</li>
-                </ul>
             </div>
         </div>
 
         <div class="row">
             <!-- Columna izquierda -->
-            <!-- Clientes -->
-            <div class="columna">
-                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                    <h3 style="text-align: center;">Nuestros clientes</h3>
-                </div>
-                <ul>
-                    <li>Alladio S.a</li>
-                    <li>Valeo Argentina</li>
-                    <li>Lequipe Monteur S.a</li>
-                    <li>Mondial Motos</li>
-                    <li>Brava Motos</li>
-                    <li>Corven Motos</li>
-                    <li>Renault Argentina</li>
-                </ul>
+            <!-- Servicios-->
+            <div class="columna2">
+                <ol>
+                    <li>
+                        <h3 style="text-align: center;">Logística</h3>
+                        <ul>
+                            <li>
+                                <p>Poseemos la infraestructura y los medios para el traslado, paletización y embalado de piezas.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 style="text-align: center;">Calidad en Proceso</h3>
+                        <ul>
+                            <li>
+                                <p>Desarrollamos calidad en el proceso de tratamientos superficiales, cumpliendo todos los estándares y normas requeridas por nuestros clientes.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 style="text-align: center;">Consultoría</h3>
+                        <ul>
+                            <li>
+                                <p>Realizamos todo tipo de asesoramiento y consultoría con respecto a nuestra especialidad en tratamientos superficiales.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 style="text-align: center;">Atencio al Cliente</h3>
+                        <ul>
+                            <li>
+                                <p>Nos caracterizamos por tener un excelente "Feedback" con todos nuestros clientes, brindando la mejor asistencia técnica, garantía y servicios postventa.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 style="text-align: center;">Investigacion y Desarrollo</h3>
+                        <ul>
+                            <li>
+                                <p>En FP Pinturas Industriales estamos a la vanguardia de nuevas tecnologías y procesos de tratamientos superficiales, desarrollando y expandiéndonos constantemente.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
             </div>
             <!-- Columna derecha -->
-            <!-- Contacto -->
-            <div class="columna">
-                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                    <h3 style="text-align: center;">Contacto</h3>
+            <div class="columna2">
+                <div class="contenedor">
+                    <iframe class="resposive-iframe" width="560" height="315" src="https://www.youtube.com/embed/mrTMh9_VgrM" title="YouTube video player"
+                    style="margin-top: 15px;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <ul>
-                    <li>Av. Abel 1842</li>
-                    <li>Córdoba, Argentina</li>
-                    <li>TEL:3515189207</li>
-                </ul>
             </div>
         </div>
-        
-        <div style="text-align: center;">
-            <h3>Nuestras redes sociales</h3>
-            <span class="fa fa-facebook" style="padding: 20px; font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px;"></span>
-            <span class="fa fa-instagram" style="padding: 20px; font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px;"></span>
-            <span class="fa fa-twitter" style="padding: 20px; font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px;"></span>
+
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+                                <!-- Servicios clientes de tres columnas -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <div class="row">
+            <!-- Columna izquierda -->
+            <div class="columna2">
+                <div data-aos="fade-down" data-aos-duration="2000">
+                    <h5 class="alladio">Alladio S.a:</h5>
+                </div>
+                <img src="/SRC/Image/dreanalladio.png" width="200" height="150" class="imagenResponsive" alt="Drean">
+                <p>Se desarrollo el pintado bicapa de su línea de lavavajillas Candy y Dream.</p>
+            </div>
+            <!-- Columna derecha-->
+            <div class="columna2">
+                <div data-aos="fade-down" data-aos-duration="2000">
+                    <h5 class="valeo">Valeo Argentina:</h5>
+                </div>
+                <img src="/SRC/Image/valeo.png" style="width: 200px; height: 150px;" class="imagenResponsive" alt="Valeo">
+                <p>Se desarrollo el pintado de manijas interiores para General Motors automotriz.</p>
+            </div>
         </div>
 
-        <!-- Footer -->
-        <!-- Copyright -->
+        <div class="row">
+            <!-- Columna izquierda -->
+            <!-- desde la línea style="width: 200px; height: 150px;" vas a poder modificar el ancho/alto de cada imagen -->
+            <div class="columna2">
+                <div data-aos="fade-down" data-aos-duration="2000">
+                    <h5 class="lequipe">Lequipe Monteur S.a:</h5>
+                </div>
+                <img src="/SRC/Image/lequip.jfif" style="width: 200px; height: 150px;" class="imagenResponsive" alt="Lequipe" >
+                <p>Servicio de pintado de piezas plásticas para interior de automotriz. FCA, GENERAL MOTORS Y RENAULT/NISSAN.</p>
+            </div>
+            <!-- Columna derecha-->
+            <div class="columna2">
+                <div data-aos="fade-down" data-aos-duration="2000">
+                    <h5 class="mondial">Mondial Motos:</h2>
+                </div>
+                <img src="/SRC/Image/mondial-logo.jpg" style="width: 200px; height: 150px;" class="imagenResponsive" alt="Mondial">
+                <p> Se recupero piezas plásticas importadas de China.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Columna izquierda -->
+            <div class="columna2">
+                <div data-aos="fade-down" data-aos-duration="2000">
+                    <h5 class="corven">Corven Motos:</h2>
+                </div>
+                <img src="/SRC/Image/Logo_corven.png" style="width: 200px; height: 150px;" class="imagenResponsive" alt="Corven">
+                <p>Se desarrollo el pintado bicapa de tanques de combustibles y piezas plástica varias de Motos. Se recupero piezas plásticas importadas de China.</p>
+            </div>
+            <!-- Columna derecha-->
+            <div class="columna2">
+                <div data-aos="fade-down" data-aos-duration="2000">
+                    <h5 class="renault">Renault Argentina:</h2>
+                </div>
+                <img src="/SRC/image/renault.jpg" style="width: 200px; height: 150px;" class="imagenResponsive" alt="Renault">
+                <p>Se trabajó en la recuperación y retocado de paragolpes estructura Bicapa en toda la gama de colores.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="columna2">
+                <img src="/SRC/image/horno.jpeg" class="imagenResponsive" alt="horno" width="500" height="500">
+            </div>
+            <div class="columna2">
+                <img src="/SRC/Image/salidaHorno.jpg" class="imagenResponsive" alt="" width="500" height="500">
+            </div>
+        </div>
+
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+                                        <!-- Contacto -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+
+        <div class="row">
+            <div class="columna1">
+                <div data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <h3 style="text-align: center;">Contacto</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Columna izquierda -->
+            <!-- Servicios-->
+            <div class="columna2">
+                <ol>
+                    <li>
+                        <h3>Datos importantes</h3>
+                        <ul>
+                            <li>
+                                <p>Av. Abel 1842</p>
+                            </li>
+                            <li>
+                                <p>Córdoba, Argentina</p>
+                            </li>
+                            <li>
+                                <p>TEL: 3515189207</p>
+                            </li>
+                            <li>
+                                <p>Mail: <a href="Mail: nico.chumbita@gmail.com">Link</a></p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <!-- Columna derecha -->
+            <div class="columna2">
+                <div class="contenedor">
+                    <iframe class="resposive-iframe" width="560" height="315" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.3816263478448!2d-64.24807878500637!3d-31.43115918139924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a1f92b3adff9%3A0x3d2e8ed94d35969e!2sAviador%20Abel%201842%2C%20X5010DCL%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1633990575566!5m2!1ses-419!2sar"
+                    style="border:0; margin-top: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+                                        <!-- Redes sociales -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <div style="text-align: center;">
+            <h3>Nuestras redes sociales</h3>
+            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook" style="padding: 20px; font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px;"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram" style="padding: 20px; font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px;"></a>
+            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter" style="padding: 20px; font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px;"></a>
+        </div>
+
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+                                            <!-- Footer -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
         <div class="footer" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2021 Copyright:
             <a href="">Nicolas Chumbita</a>
