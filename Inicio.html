@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- El charset UTF-8 es para que el navegador acepte caracteres extraños -->
+        <meta charset="UTF-8">
+
+        <!-- Esta línea adapta el diseño a la pantalla móvil -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--AOS animacion-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- ///////////////////////////////////////////////////////////////////////// -->
+        <!-- ///////////////////////////////////////////////////////////////////////// -->
+        <!-- ///////////////////////////////////////////////////////////////////////// -->
+        <!-- Este este es el título que figura en la pestaña de tu web, no deberías hacerlo tan largo (es una sugerencia) -->
+        <title>FP|Pinturas Industriales dedicada a sumar colores|Inicio</title>
+
+        <!-- De acá, para abajo, es todo lo que voy a ir agregano -->
+        <!-- Solo voy a usar CSS para el diseño de todo, por lo que no vamos a usar Bootstrap -->
+        <!-- Link para vincular el css del top nav de tu página -->
+        <link rel="stylesheet" type="text/css" href="/CSS/home/top_nav.css">
+
+        <!-- css de la imagen -->
+        <link rel="stylesheet" type="text/css" href="/CSS/home/imagen_responsiva.css">
+
+        <!-- Css de las columnas -->
+        <link rel="stylesheet" type="text/css" href="/CSS/home/columnas.css">
+
+        <!-- Css de las social media -->
+        <link rel="stylesheet" type="text/css" href="/CSS/home/social_media.css">
+
+        <!-- css del footer -->
+        <link rel="stylesheet" type="text/css" href="/CSS/home/footer.css">
+
+        <!-- Acá añadimos el archivo javascript -->
+        <script type="text/javascript" src="/JS/funcion_hamburgues.js"></script>
+
+        <!-- Acá añadimos esta línea externa a una librería -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body style="background-color: #FEF5ED;;">
+        <!-- Este es tu panel de navegación para tus cosas -->
+        <div class="topnav" id="topnavhome">
+            <a href="#" class="active">Home</a> <!-- está en active porque pasa a ser el primer elemento en iniciar-->
+            <a href="./SRC/Pestañas/Nuestros-Servicios.html">Servicios</a>
+            <a href="./SRC/Pestañas/Nuestros-Clientes.html">Clientes</a>
+            <a href="./SRC/Pestañas/Contacto.html">Contacto</a>
+
+            <!-- Esta función en javascript añade el menú hamburguesa para caundo cambia el tamaño de la pantalla -->
+            <a href="javascript:void(0);" class="icon" onclick="funcionMenuHamburguesa()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Imagen que pones de fp -->
+        <!-- Le vamos a establecer un ancho y alto por defecto -->
+        <img src="./SRC/Image/imagen2.jpg" class="imagenResponsive" width="600" height="400" alt="pintando">
+
+        <div class="row">
+            <!-- Columna izquierda -->
+            <!-- Info -->
+            <div class="columna">
+                <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <h3 class="quienes-somos" style="text-align: center;">¿Quiénes somos?</h3>
+                </div>
+                <p style="text-align: center;">
+                    FP es una empresa formada por un equipo de profesionales con amplia
+                    experiencia en
+                    tratamientos superficiales
+                    en serie,
+                    ya sea en superficies plásticas, metálicas o maderas.
+                    También trabajamos con tecnología de pintura en polvo para superficies de aluminio, chapa y
+                    acero.
+                    Nuestro objetivo es llegar a ser los mejores; nuestro compromiso con los clientes es
+                    ofrecer excelentes estándares de calidad y satisfacer todas sus necesidades.
+                </p>
+            </div>
+            <!-- Columna derecha -->
+            <!-- Servicios-->
+            <div class="columna">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <h3 style="text-align: center;">Nuestros servicios</h3>
+                </div>
+                <ul >
+                    <li>Logistica</li>
+                    <li>Calidad en Proceso</li>
+                    <li>Consultoria</li>
+                    <li>Atencio al Cliente</li>
+                    <li>Investigacion y Desarrollo</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Columna izquierda -->
+            <!-- Clientes -->
+            <div class="columna">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <h3 style="text-align: center;">Nuestros clientes</h3>
+                </div>
+                <ul>
+                    <li>Alladio S.a</li>
+                    <li>Valeo Argentina</li>
+                    <li>Lequipe Monteur S.a</li>
+                    <li>Mondial Motos</li>
+                    <li>Brava Motos</li>
+                    <li>Corven Motos</li>
+                    <li>Renault Argentina</li>
+                </ul>
+            </div>
+            <!-- Columna derecha -->
+            <!-- Contacto -->
+            <div class="columna">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <h3 style="text-align: center;">Contacto</h3>
+                </div>
+                <ul>
+                    <li>Av. Abel 1842</li>
+                    <li>Córdoba, Argentina</li>
+                    <li>TEL:3515189207</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <h3>Nuestras redes sociales</h3>
+            <br>
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-facebook"></span>
+        </div>
+
+        <!-- Footer -->
+        <!-- Copyright -->
+        <div class="footer" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a href="">Nicolas Chumbita</a>
+        </div>
+
+        <!-- Script para la animación del título -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

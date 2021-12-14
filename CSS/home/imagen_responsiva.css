@@ -1,0 +1,8 @@
+/* lo único que vamos a hacer es decirle a la imagen que queremos que se achique o agrande según la pantalla */
+.imagenResponsive{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    width: 100%;
+    height: auto;
+}
