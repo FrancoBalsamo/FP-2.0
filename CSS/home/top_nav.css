@@ -12,7 +12,7 @@ body{
 
 /* al topnav le vamos a asignar un link (a) -> a es la etiqueta de los links */
 .topnav a{
-    float: left; /*la posicionamos en la izquierda*/
+    float: right; /*la posicionamos en la izquierda*/
     display: block; /*significa que tiene algo que lo separa de los demás elementos*/
     color: white; /*color del texto*/
     text-align: center; /*posición del texto*/
@@ -56,6 +56,6 @@ body{
     .topnav.responsive a {
         float: none;
         display: block;
-       text-align: left;
+        text-align: left;
     }
 }
